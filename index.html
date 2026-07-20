@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102a43" />
+    <meta
+      name="description"
+      content="A fresh, painfully cheesy real-estate joke every time you visit."
+    />
+    <title>Closing Remarks — Real Estate Dad Jokes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="brand" aria-label="Closing Remarks">
+        <div class="brand-mark" aria-hidden="true">
+          <span class="roof"></span>
+          <span class="door"></span>
+        </div>
+        <div>
+          <p class="eyebrow">Your daily dose of curb appeal</p>
+          <h1>Closing Remarks</h1>
+        </div>
+      </header>
+
+      <section class="joke-card" aria-labelledby="joke-label">
+        <div class="card-topline">
+          <span id="joke-label" class="listing-tag">Fresh listing</span>
+          <span class="stars" aria-label="Five-star cheesiness">★★★★★</span>
+        </div>
+
+        <blockquote id="joke" aria-live="polite"></blockquote>
+
+        <div class="card-footer">
+          <p id="counter" class="counter"></p>
+          <button id="another" class="primary-button" type="button">
+            <span>Show me another</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      </section>
+
+      <div class="secondary-actions">
+        <button id="copy" class="text-button" type="button">
+          <span aria-hidden="true">⧉</span>
+          <span>Copy joke</span>
+        </button>
+        <button id="share" class="text-button" type="button">
+          <span aria-hidden="true">↗</span>
+          <span>Share</span>
+        </button>
+      </div>
+
+      <footer>
+        <p>Equal opportunity offender of good humor.</p>
+      </footer>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="jokes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
